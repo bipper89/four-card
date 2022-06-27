@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html, body {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@layer components {
+    .card {
+        @apply w-64 h-44 mx-auto bg-white shadow-xl rounded-md lg:w-[350px] lg:h-[250px];
+    }
+
+    .card-title {
+        @apply text-veryDarkBlue lg:text-xl mt-6 ml-6 font-semibold;
+    }
+
+    .card-p {
+        @apply mx-4 mt-2 px-2 text-[11px] lg:text-sm text-gray-400 font-light;
+    }
+
+    .card-content {
+        @apply mt-2 flow-root px-1;
+    }
+
+    .card-img {
+        @apply float-right w-12 h-12 m-3 p-0.5 lg:w-20 lg:h-20 lg:m-5;
+    }
+}
